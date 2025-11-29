@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Redirector</title>
+    <script>
+        (function() {
+            var hash = window.location.hash;
+            if (hash && hash.length > 1) {
+                var target = hash.substring(1);
+                window.location.href = target;
+            }
+        })();
+    </script>
+</head>
+<body>
+    <h1>Steam Redirector</h1>
+    <p>This page redirects you to the URL specified after the hash.</p>
+    <p>Example: <code>website.com/#https://psykzz.com</code> redirects to <code>https://psykzz.com</code></p>
+</body>
+</html>
